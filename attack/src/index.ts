@@ -32,7 +32,7 @@ async function main() {
     const promises = [];
     console.log("here for " + i);
     for (let j = 0; j < 100; j++) {
-      promises.push(sendRequest(i + j));
+      promises.push(sendRequest(i+j));
     }
     await Promise.all(promises);
   }
